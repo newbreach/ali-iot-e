@@ -1,0 +1,35 @@
+body{
+   background-color:#000000;
+   color:white;
+}
+.lamp-panel{
+position: relative;
+width: 600px;
+height: 560px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.lamp {
+    background-image: url('../images/lamp.png');
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 560px;
+    position: absolute;
+    z-index: 3;
+}
+
+.lamp-light {
+    -webkit-mask-image: url('../images/light.png');
+    -webkit-mask-repeat: no-repeat;
+    width: 600px;
+    height: 560px;
+    position: absolute;
+    z-index: 2;
+}
+.lamp-light.open{
+    visibility:visible;
+}
+.lamp-light.close{
+    visibility: hidden;
+}
