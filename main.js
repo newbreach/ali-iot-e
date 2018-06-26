@@ -7,7 +7,11 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.  focusable :false,
-  mainWindow = new BrowserWindow({width: 960, height: 800})
+  mainWindow = new BrowserWindow({width: 960, height: 800,
+    
+    //icon:'./style/favicon.ico'
+    icon: __dirname + '/style/favicon.ico'
+  })
   //mainWindow.webContents.openDevTools()
 
   // and load the index.html of the app.
@@ -17,7 +21,7 @@ function createWindow () {
   //mainWindow.setFullScreen(true)
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
-
+  mainWindow.webContents.setFrameRate(30);
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
     // Dereference the window object, usually you would store windows

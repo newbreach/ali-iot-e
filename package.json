@@ -1,10 +1,13 @@
 {
-  "name": "electron-quick-start",
+  "name": "ali-iot-e",
+  "productName":"模拟设备",
+  "appVersion":"1.0.1",
   "version": "1.0.0",
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "package": "electron-packager . --icon=style/favicon.ico"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
@@ -17,7 +20,8 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^2.0.0"
+    "electron": "^2.0.0",
+    "electron-packager": "^12.1.0"
   },
   "dependencies": {
     "mqtt": "^2.18.1"
