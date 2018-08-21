@@ -20,7 +20,7 @@ function createWindow () {
   mainWindow.setMenu(null)
   //mainWindow.setFullScreen(true)
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
   mainWindow.webContents.setFrameRate(30);
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {
